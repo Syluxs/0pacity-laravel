@@ -16,7 +16,7 @@
                 <ul class="user-nav">
                     <li><button type="button" id="register-user"  class="top-user text-gray-900 bg-white border  focus:outline-none hover:bg-gray-100   font-xs rounded-full text-sm px-5  me-2  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Register</button></li>
                     <li><button type="button" id="log-user"  class="top-user text-gray-900 bg-white border  focus:outline-none hover:bg-gray-100  font-xs rounded-full text-sm px-5  me-2  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Login</button></li>
-                    <li><a href="# "><img class="user-pic" src="{{ asset('assetsP/pic/Syluxs.jpeg') }}"alt="Rounded avatar"></a></li>
+                    <li><a href="#"><img class="user-pic" src="{{ asset('assetsP/pic/Syluxs.jpeg') }}"alt="Rounded avatar"></a></li>
                 </ul>
             </div>
          <!--nav-comp-->
