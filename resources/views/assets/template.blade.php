@@ -16,16 +16,16 @@
                 <ul class="user-nav">
                     <li><button type="button" id="register-user"  class="top-user text-gray-900 bg-white border  focus:outline-none hover:bg-gray-100   font-xs rounded-full text-sm px-5  me-2  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Register</button></li>
                     <li><button type="button" id="log-user"  class="top-user text-gray-900 bg-white border  focus:outline-none hover:bg-gray-100  font-xs rounded-full text-sm px-5  me-2  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Login</button></li>
-                    <li><a href="#"><img class="user-pic" src="{{ asset('assetsP/pic/Syluxs.jpeg') }}"alt="Rounded avatar"></a></li>
+                    <li><a href="{{ route('user') }}"><img class="user-pic" src="{{ asset('assetsP/pic/Syluxs.jpeg') }}"alt="Rounded avatar"></a></li>
                 </ul>
             </div>
          <!--nav-comp-->
-         <a id="logo-comp" href="/index.html"><img class="logo-pic" src="{{ asset('assetsP/pic/hunter.jpeg') }}" alt="test"></a>
+         <a id="logo-comp" href="{{ route('index') }}"><img class="logo-pic" src="{{ asset('assetsP/pic/hunter.jpeg') }}" alt="test"></a>
          <ul id="nav-comp">  
-             <li><a href="/pages/who-we-are.html">Who we are</a></li>
-             <li><a href="/pages/news.html">News</a></li>
-             <li><a href="/pages/medias.html">Medias</a></li>
-             <li><a href="/pages/market.html">Market</a></li>
+             <li><a href="{{ route('who-we-are') }}">Who we are</a></li>
+             <li><a href="{{ route('news') }}">News</a></li>
+             <li><a href="{{ route('medias') }}">Medias</a></li>
+             <li><a href="{{ route('market') }}">Market</a></li>
            </ul>
          <!--mobile-only -->
              <ul id="nav-mobile">
@@ -36,15 +36,15 @@
                      <span></span>
             
                      <ul id="menu">
-                         <a href="/pages/who-we-are.html"><li>Who we are</li></a>
-                         <a href="/pages/news.html"><li>News</li></a>
-                         <a href="/pages/medias.html"><li>Medias</li></a>
-                         <a href="/pages/market.html"><li>Market</li></a>
+                         <a href="{{ route('who-we-are') }}"><li>Who we are</li></a>
+                         <a href="{{ route('news') }}"><li>News</li></a>
+                         <a href="{{ route('medias') }}"><li>Medias</li></a>
+                         <a href="{{ route('market') }}"><li>Market</li></a>
                      </ul>
                      </div>
                  </li>
                  <li id="logo-mobile">
-                     <a href="/index.html"><img class="logo-pic" src="{{ asset('assetsP/pic/hunter.jpeg') }}" alt="test"></a></li>
+                     <a href="{{ route('index') }}"><img class="logo-pic" src="{{ asset('assetsP/pic/hunter.jpeg') }}" alt="test"></a></li>
          </ul>
          <!--end-mobile-->
         </nav>
@@ -67,14 +67,14 @@
     
     <footer>
         <ul id="footer-nav">
-            <li><a href="#Who we are">Who we are</a></li>
-                <li><a href="#News">News</a></li>
-                <li><a href="#Medias">Medias</a></li>
-                <li><a href="#Market">Market</a></li>
+            <li><a href="{{ route('who-we-are') }}">Who we are</a></li>
+                <li><a href="{{ route('news') }}">News</a></li>
+                <li><a href="{{ route('medias') }}">Medias</a></li>
+                <li><a href="{{ route('market') }}">Market</a></li>
         </ul>
         <div id="footer-string">
         </div>
-        <a href="/index.html" id="logo-foot"><img src="{{ asset('assetsP/pic/hunter.jpeg') }}" alt="test"></a>
+        <a href="{{ route('index') }}" id="logo-foot"><img src="{{ asset('assetsP/pic/hunter.jpeg') }}" alt="test"></a>
         <ul id="icon">
             <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
