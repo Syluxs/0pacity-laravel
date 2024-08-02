@@ -14,7 +14,7 @@
             <!--top-user class for the ccs and id for the form in js-->
             <div class="top-nav">
                 <ul class="user-nav">
-                    <li><button type="button" id="register-user"  class="top-user text-gray-900 bg-white border  focus:outline-none hover:bg-gray-100   font-xs rounded-full text-sm px-5  me-2  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Register</button></li>
+                    <li><button type="button" id="register-user" data-toggle="modal" data-target="#registerModal"  class="top-user text-gray-900 bg-white border  focus:outline-none hover:bg-gray-100   font-xs rounded-full text-sm px-5  me-2  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Register</button></li>
                     <li><button type="button" id="log-user"  class="top-user text-gray-900 bg-white border  focus:outline-none hover:bg-gray-100  font-xs rounded-full text-sm px-5  me-2  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600">Login</button></li>
                     <li><a href="{{ route('user') }}"><img class="user-pic" src="{{ asset('assetsP/pic/Syluxs.jpeg') }}"alt="Rounded avatar"></a></li>
                 </ul>
@@ -91,6 +91,7 @@
             <li><a href="#">Cookie notice</a></li>
         </ul>
     </footer>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 </html>

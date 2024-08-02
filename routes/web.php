@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
 
 
 Route::get('/', function () {
@@ -46,3 +47,9 @@ Route::get('/article/{id}', function ($id) {
         'image' => '/assets/pic/article-image.jpg'
     ]);
 })->name('article');
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register-form');
+
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
